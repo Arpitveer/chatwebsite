@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus</title>
+    <link rel="stylesheet" href="/style2">
+</head>
+
+<body>
+    <div class="container">
+        <div class="chat">
+            <div class="chat-header">
+                <div class="profile">
+                    <div class="left">
+                        <img src="/img/arrow.png" class="arrow">
+                        <img src="/img/pp.png" id="pp">
+                        <h2 id="recname">Elias</h2>
+                        <span>online</span>
+                    </div>
+                    <div class="right">
+                        <a href="https://meet.google.com/" target="_blank"><img src="/img/video.png" class="icon"></a>
+                        <a href="https://meet.google.com/" target="_blank"><img src="/img/phone.png" class="icon"></a>
+                        <img src="/img/more.png" class="icon">
+                    </div>
+                </div>
+            </div>
+            <div id="chat-box">
+                
+                
+            </div>
+
+            <div class="chat-footer">
+                <div id="display_messages"></div>
+                <div class="message" >
+                    <form >
+                        <input class="chatting" type="text" id="message" >
+                    </form>
+                    <button class="neon-button" id="sendmess">send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.socket.io/4.3.2/socket.io.min.js"></script>
+    <script src="/client.js"></script>
+</body>
+
+</html>
