@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+html,
+ body {
+    height: 100%;
+    object-fit: cover;
+    background-image:url("/backgroud.jpg");
+ }
+  
+ html {
+   font-size: 62.5%;
+ }
+ 
+ body {
+   font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+ }
+ 
+ a {
+   text-decoration: none;
+   color: inherit;
+ }
+
+
+body{
+  color: white;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  min-width: 320px;
+    /* background: linear-gradient(223deg, #ff0000, #470000, #000000, #5e5e5e); */
+    background-image: "/backgroud.jpg";
+    background-size: 400% 400%;
+/* 
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite; */
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+
+
+
+
+.nav-bar{
+    background: var(--sidebar-header);
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    padding: 1rem 2rem;
+}
+
+
+.friend{
+    display: flex;
+}
+
+.user-profile-picture img{
+    object-fit: cover;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.chat-bar{
+    height: 93%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+.chat-bar::-webkit-scrollbar {
+    width: 0.7rem;
+    height: 3rem;
+}
+  
+.chat-bar::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+    background: rgba(0.1, 0.1, 0.1, 0.25);
+    padding: 1rem 0 0 2rem;
+    cursor: pointer;
+}  
+
+.chat:hover {
+    background: rgba(0.1, 0.1, 0.1, 0.5);
+}
+
+.contact-profile-picture img{
+    object-fit: cover;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin: 1.5rem;
+}
+
+.chat-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.chat:last-of-type .chat-right {
+    border-bottom: none;
+}
+
+.chat-right-top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.contact-id{
+    font-size: 1.7rem;
+}
+
+.chat-list{
+    width: 30%;
+    height: 70rem;
+    margin: 0.95% 0% 0.95% 4%;
+}
+body{
+    display: flex;
+}
+
+.chat-window{
+    width: 90%;
+    height: 70rem;
+    margin: 0.95% 0% 0.95% 0%;
+}
